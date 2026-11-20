@@ -1,1 +1,20 @@
 @import "tailwindcss";
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+@theme{
+
+    --color-alpha:#f4be00;
+    --color-beta:#111827;
+    --color-bg:#f7f7f4;
+
+    /* for sarah left nav bar */
+    --color-low_alpha:#fff9db;
+
+   
+   /* font */
+   --font-main: 'Plus Jakarta Sans', sans-serif;
+
+
+
+}
