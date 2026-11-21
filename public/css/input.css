@@ -1,8 +1,13 @@
 @import "tailwindcss";
- @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@plugin "daisyui" {
+    themes: light --default;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 
-@theme{
+@theme {
 
     --color-alpha:#f4be00;
     --color-beta:#111827;
@@ -10,7 +15,7 @@
     --color-gold:#9c770a;
 
     /* for sarah left nav bar */
-    --color-low_alpha:#fff9db;
+    --color-low_alpha: #fff9db;
 
    
    /* font */
