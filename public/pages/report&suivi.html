@@ -1,13 +1,353 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<htmlw lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Report & Suivi</title>
-    <link rel="stylesheet" href="../css/output.css">
-</head>
-<body>
-    <header id="sarah"></header>
-    <main id="mohammed"></main>
-</body>
-</html>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-sm flex items-center">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              aria-label="Menu"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Marketplace</a></li>
+            <li><a>Missions</a></li>
+            <li><a>About</a></li>
+            <li><a>History</a></li>
+            <li><a>Report & Suivi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center max-md:flex items-center justify-center">
+        <img class="w-15" src="../images/image.png" alt="" />
+      </div>
+      <div class="navbar-end flex items-center gap-3">
+        <button class="btn btn-ghost btn-circle max-md:hidden">
+          <svg
+            aria-label="Search"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+        <button class="flex items-center justify-between gap-5">
+          <div
+            class="indicator flex items-center justify-center gap-1 bg-low_alpha border border-alpha rounded-full p-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-coin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"
+              />
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
+              />
+            </svg>
+            <p>1,240</p>
+          </div>
+        </button>
+
+        <div
+          class="btn btn-ghost btn-circle bg-beta text-amber-50 rounded-full w-10 h-10 py-1 px-2 flex items-center"
+        >
+          KA
+        </div>
+      </div>
+    </div>
+    <main id="mohammed" class="px-[6rem] py-[3rem] gap-[3rem] flex flex-col max-md:px-[1rem] bg-bg flex">
+      <div
+        class="flex items-center justify-between max-md:flex-col max-md:gap-[1.5rem]"
+      >
+        <div class="flex flex-col max-md:gap-[0.2rem]">
+          <p
+            class="text-[#9c770a] font-semibold text-[0.8rem] tracking-[0.1rem]"
+          >
+            TRANSACTION HISTORY
+          </p>
+          <h1 class="font-main font-semibold max-md:text-[2rem] text-[3.5rem]">
+            Your coin activity.
+          </h1>
+          <p class="font-main text-gray-500">
+            A clear record of everything you've earned, spent and contributed.
+          </p>
+        </div>
+      </div>
+      <section class="flex max-md:flex-col w-[100%] gap-[1.5rem]">
+        <div class="bg-white p-[1.5rem] w-[53%] max-md:w-[100%] flex flex-col gap-[2rem] shadow-xl/20 rounded-[20px]">
+          <div class="flex items-center gap-[0.5rem] py-[0.7rem]">
+            <div class="bg-low_alpha p-[0.8rem] rounded-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-code-slash"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-[1rem] font-semibold">Submit a report</h3>
+              <p class="text-[0.8rem] text-[#aeb4c5]">
+                We usually respond within 1-2 working days
+              </p>
+            </div>
+          </div>
+          <div class="flex max-md:flex-col gap-[1.5rem]">
+            <div class="flex flex-col gap-[0.5rem] w-[50%] max-md:w-[100%]">
+              <label for="fullname"
+                >Full name<span class="text-red-700">*</span></label
+              >
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Nom & Prénom"
+                class="outline-none border-[1px] border-[#eaeef4] bg-[#f9f9f9] py-[0.8rem] pl-[1rem] rounded-[16px]"
+              />
+            </div>
+            <div class="flex flex-col gap-[0.5rem] w-[50%] max-md:w-[100%] max-md:w-[100%]wwwww">
+              <label for="email"
+                >Email<span class="text-red-700">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="name@example.com"
+                class="outline-none border-[1px] border-[#eaeef4] bg-[#f9f9f9] py-[0.8rem] pl-[1rem] rounded-[16px]"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-[0.8rem]">
+            <label for="cat">Category<span class="text-red-700">*</span></label>
+            <select
+              id="cat"
+              class="outline-none w-[100%] border-[1px] border-[#eaeef4] bg-[#f9f9f9] py-[0.8rem] pl-[1rem] pr-[2rem] rounded-[16px]"
+            >
+              <option value="#">Select an issue category</option>
+              <option value="#">
+                Website Bug / Glitch / Transaction Issue
+              </option>
+              <option value="#">Fraud / Unfulfilled Service</option>
+              <option value="#">Confidential Internal LionsGeek Issue</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-[0.8rem]">
+            <label for="message"
+              >Message<span class="text-red-700">*</span></label
+            >
+            <textarea
+              id="message"
+              rows="5"
+              class="outline-none w-[100%] border-[1px] border-[#eaeef4] bg-[#f9f9f9] py-[0.8rem] pl-[1rem] pr-[2rem] rounded-[16px]"
+            ></textarea>
+          </div>
+          <div class="flex items-center justify-center w-full">
+            <label
+              for="dropzone-file"
+              class="group flex w-full cursor-pointer items-center gap-4 rounded-2xl border border-dashed border-slate-300 bg-slate-50/60 px-5 py-4 transition hover:border-slate-400 hover:bg-slate-100/70 focus-within:ring-2 focus-within:ring-slate-400"
+            >
+              <!-- Icon Box -->
+              <div
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-2xs transition group-hover:scale-105"
+              >
+                <svg
+                  class="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"
+                  />
+                </svg>
+              </div>
+
+              <!-- Text Content -->
+              <div class="min-w-0">
+                <p class="text-sm font-semibold text-slate-800">
+                  Add an attachment
+                  <span class="font-normal text-slate-400">(optional)</span>
+                </p>
+                <p class="mt-0.5 text-xs text-slate-400">
+                  PNG, JPG or PDF — max 10 MB
+                </p>
+              </div>
+
+              <input
+                id="dropzone-file"
+                type="file"
+                accept=".png,.jpg,.jpeg,.pdf"
+                class="sr-only"
+              />
+            </label>
+          </div>
+          <hr class="text-gray-300">
+          <div class="flex items-center max-md:flex-col justify-between max-md:gap-[0.8rem]">
+            <p class="text-[0.7rem] text-gray-400 ">Confidential reports are only visible to the authorized LionsGeek team.</p>
+            <button type="submit" class="text-beta bg-alpha w-[30%] max-md:w-full py-[1rem] rounded-2xl font-semibold">Submit report</button>
+          </div>
+        </div>
+      <!-- Second section right Container -->
+       <div class="w-[47%] max-md:w-[100%] font-main flex flex-col gap-[1rem] ">
+        <!-- top -->
+          <div class="flex flex-col gap-[0.3rem]">
+              <h3 class="text-[1.5rem] font-semibold">Submit a report</h3>
+             <div class="flex items-center justify-between">
+               <p class="text-[0.8rem] text-[#aeb4c5]">
+                We usually respond within 1-2 working days
+              </p>
+              <p class=" bg-[#e1e7ef] w-[10%] text-[0.8rem]  w-fit  px-[0.5rem] font-semibold text-beta  rounded-xl">Ticket</p>
+            </div>
+            
+          </div>
+
+
+
+
+
+
+
+
+
+          <!-- section top -->
+            <div class=" bg-white flex flex-col rounded-[16px] gap-[2rem] p-[1.5rem] shadow-xl/20">
+            <div class="flex flex-col gap-[0.7rem]">
+              <div class="flex justify-between items-center">
+                <p class="text-[0.9rem] font-semibold">#LG-104 <span class="text-gray-400 text-[0.7rem]">Transaction issue</span></p>
+                <p class=" bg-low_alpha w-[10%] text-[0.8rem]  w-fit  px-[0.5rem] font-semibold text-gold  rounded-xl">In Progress</p>
+              </div>
+              <p class="font-semibold ">Coins deducted twice after purchase</p>
+
+            </div>
+            <!-- section bottom -->
+             <div>
+                <div class="flex justify-between items-center pb-[0.5rem]">
+                  <p class="text-[0.8rem] font-semibold text-gray-500">En cours</p>
+                  <p class="text-[0.8rem] font-semibold text-gray-500">65%</p>
+                </div>
+                <div class="bg-gray-300 h-[0.6rem] w-full rounded-full">
+                  <div class="bg-alpha h-full w-[65%] rounded-full">
+
+                  </div>
+                </div>
+             </div>
+            </div>
+
+
+
+          <!-- section 2 -->
+            <div class=" bg-white flex flex-col rounded-[16px] gap-[2rem] p-[1.5rem] shadow-xl/20">
+            <div class="flex flex-col gap-[0.7rem]">
+              <div class="flex justify-between items-center">
+                <p class="text-[0.9rem] font-semibold">#LG-098 <span class="text-gray-400 text-[0.7rem]">Website bug</span></p>
+                <p class=" bg-[#e1e7ef] w-[10%] text-[0.8rem]  w-fit  px-[0.5rem] font-semibold text-beta  rounded-xl">Pending</p>
+              </div>
+              <p class="font-semibold ">Marketplace preview not loading</p>
+
+            </div>
+            <!-- section bottom -->
+             <div>
+                <div class="flex justify-between items-center pb-[0.5rem]">
+                  <p class="text-[0.8rem] font-semibold text-gray-500">En attente</p>
+                  <p class="text-[0.8rem] font-semibold text-gray-500">20%</p>
+                </div>
+                <div class="bg-gray-300 h-[0.6rem] w-full rounded-full">
+                  <div class="bg-alpha h-full w-[20%] rounded-full">
+
+                  </div>
+                </div>
+             </div>
+            </div>
+
+
+
+
+
+          <!-- Section 3 -->
+            <div class=" bg-white flex flex-col rounded-[16px] gap-[2rem] p-[1.5rem] shadow-xl/20">
+            <div class="flex flex-col gap-[0.7rem]">
+              <div class="flex justify-between items-center">
+                <p class="text-[0.9rem] font-semibold">#LG-087 <span class="text-gray-400 text-[0.7rem]">Service report</span></p>
+                <p class=" bg-beta w-[10%] text-[0.8rem]  w-fit  px-[0.5rem] font-semibold text-white  rounded-xl">Resolved</p>
+              </div>
+              <p class="font-semibold ">Marketplace preview not loading</p>
+
+            </div>
+            <!-- section bottom -->
+             <div>
+                <div class="flex justify-between items-center pb-[0.5rem]">
+                  <p class="text-[0.8rem] font-semibold text-gray-500">Résolu</p>
+                  <p class="text-[0.8rem] font-semibold text-gray-500">100%</p>
+                </div>
+                <div class="bg-gray-300 h-[0.6rem] w-full rounded-full">
+                  <div class="bg-beta h-full w-[100%] rounded-full">
+
+                  </div>
+                </div>
+             </div>
+            </div>
+
+
+
+            <!-- section 4 -->
+             <div class="bg-beta flex flex-col  rounded-[16px] shadow-xl/20 p-[1rem]">
+              <p class="text-[0.8rem] font-semibold  text-white">Need immediate guidance?</p>
+              <p class="text-gray-500 text-[0.65rem]">Speak to your promo coach for urgent or safety-related concerns.</p>
+             </div>
+
+
+        </div>
+
+
+
+
+      </section>
+    </main>
+  </body>
+</htmlw
