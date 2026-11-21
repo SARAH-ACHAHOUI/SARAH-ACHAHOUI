@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="sarah"></header>
-    <main  id="mohammed" class="px-[6rem] py-[6rem] max-md:px-[1rem] h-[100vh] bg-bg flex flex-col   gap-[3rem]">
+    <main  id="mohammed" class="px-[6rem] py-[6rem] max-md:px-[1rem] bg-bg flex flex-col   gap-[3rem]">
         <div class="flex items-center justify-between  max-md:flex-col max-md:gap-[1.5rem] ">
             <div class="flex flex-col max-md:gap-[0.2rem]">
             <p class="text-[#9c770a] font-semibold text-[0.8rem] tracking-[0.1rem]">TRANSACTION HISTORY</p>
@@ -16,7 +16,7 @@
             <p class="font-main text-gray-500">A clear record of everything you've earned, spent and contributed.</p>
             </div>
 
-            <div class="flex flex-col gap-[0.1rem] border-[1px] border-alpha w-[15%] max-md:w-full h-fit bg-low_alpha py-[1rem] px-[1rem]  rounded-md">
+            <div class="flex flex-col gap-[0.1rem] border-[1px] border-alpha w-[15%] max-md:w-full bg-low_alpha py-[1rem] px-[1rem]  rounded-md">
                 <p class="text-[#9c770a] font-semibold text-[0.8rem] tracking-[0.1rem] uppercase">Current balance</p>
                 <div class="flex items-center gap-[0.5rem]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
@@ -31,48 +31,32 @@
         </div>
         <!-- Table transaction -->
         <section class="bg-white p-[2rem] gap-[1rem] flex flex-col rounded-[15px] shadow-xl">
-
             <!-- hero first -->
-            <div class="flex items-center justify-between px-[1rem]">
-                <div class="bg-[#f0f4f8] flex gap-[1rem] w-[25%] p-[0.3rem] rounded-md">
-                    <p class=" text-[0.8rem] font-semibold  bg-white px-[1.5rem] py-[0.5rem] font-main rounded-md w-fit">All</p>
-                    <p class=" text-[0.8rem] font-semibold   text-gray-500  px-[1.5rem] py-[0.5rem] font-main rounded-md w-fit">Earned</p>
-                    <p class=" text-[0.8rem] font-semibold    text-gray-500  px-[1.5rem] py-[0.5rem]  font-main rounded-md w-fit">Spent</p>
+            <div class="flex max-md:flex-col items-center justify-between  max-md:gap-[1rem] px-[1rem]">
+                <div class="bg-[#f0f4f8] flex gap-[1rem] w-[25%]  max-md:w-[100%] p-[0.3rem] rounded-md">
+                    <p class=" text-[0.8rem] font-semibold  bg-white px-[1.5rem] py-[0.5rem] font-main rounded-md">All</p>
+                    <p class=" text-[0.8rem] font-semibold   text-gray-500  px-[1.5rem] py-[0.5rem] font-main rounded-md">Earned</p>
+                    <p class=" text-[0.8rem] font-semibold    text-gray-500  px-[1.5rem] py-[0.5rem]  font-main rounded-md">Spent</p>
                 </div>
-                <div class="flex border-[1px] border-[#e5eaf1] rounded-md w-[20%] items-center pl-[0.5rem] gap-[0.5rem] py-[0.3rem]">
+                <div class="flex border-[1px] border-[#e5eaf1]  rounded-[10px] w-[20%] max-md:w-[100%] items-center pl-[0.5rem] gap-[0.5rem] py-[0.3rem]  ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#b5bfcf" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                     </svg>
                     <input type="search" placeholder="Search transactions" class="outline-none  ">
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
             <!-- second part -->
-            <div class="flex bg-[#f7f9fb]">
-                <div class=" w-[70%] flex-1 uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">Transaction</div>
-                <div class=" w-[10%] flex-1  uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">date & time</div>
-                <div class=" w-[10%] flex-1   uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">status</div>
-                <div class=" w-[10%] flex-1     uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">amount</div>
-            </div>
-
-
-
-            
+            <div class="flex bg-[#f7f9fb] max-md:hidden px-[1rem]">
+                <div class=" w-[70%] uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">Transaction</div>
+                <div class=" w-[10%] uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">date & time</div>
+                <div class=" w-[10%] uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500">status</div>
+                <div class=" w-[10%] uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  font-semibold text-gray-500 text-right">amount</div>
+            </div>         
             <!-- main table -->
-            <div class="px-[1rem]  flex flex-col    gap-[1rem]">
+            <div class="px-[1rem]  flex flex-col    gap-[1rem]">  
                 <!-- first -->
-                <div class="flex  items-center  pb-[0.5rem] border-b-[1px]  border-b-gray-300"> 
-                    <div class="flex items-center   gap-[0.5rem]    w-[70%] flex-1 text-[0.6rem] py-[0.7rem]">
+                <div class="flex items-center pb-[0.5rem] border-b-[1px]  border-b-gray-300"> 
+                    <div class="flex items-center   gap-[0.5rem]    w-[70%] py-[0.7rem]">
                         <div   class="bg-low_alpha p-[0.8rem] rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
                              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
@@ -83,15 +67,14 @@
                             <p  class="text-[0.8rem] text-[#aeb4c5]">2h coding goal completed </p>
                         </div>
                     </div>
-                    <!-- <div class=" w-[70%] flex-1 uppercase tracking-[0.1rem] text-[0.6rem] py-[0.7rem]  text-gray-500">Transaction</div> -->
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]  text-gray-500">Today, 09:42</div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]   text-gray-500"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
-                    <div class=" w-[10%] flex-1  text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+40</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden text-gray-500">Today, 09:42</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
+                    <div class=" w-[10%] max-md:flex-1 text-right text-gold  font-semibold   text-[1rem] py-[0.7rem] ">+40</div>
 
                 </div>
                 <!-- second -->
                 <div class="flex  items-center  pb-[0.5rem] border-b-[1px]  border-b-gray-300">
-                    <div class="flex items-center   gap-[0.5rem]    w-[70%] flex-1 text-[0.6rem] py-[0.7rem]">
+                    <div class="flex items-center   gap-[0.5rem]    w-[70%] py-[0.7rem]">
                         <div class="bg-[#f0f4f8] p-[0.8rem] rounded-md">
                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                                 <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
@@ -102,14 +85,14 @@
                             <p  class="text-[0.8rem]  text-[#aeb4c5]">Marketplace  purchase</p>
                         </div>
                     </div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]  text-gray-500">Yesterdat, 16:18</div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]   text-gray-500"><p class=" bg-[#f0f4f8]    w-fit  p-[0.2rem] font-semibold text-beta  rounded-xl">Earned</p></div>
-                    <div class=" w-[10%] flex-1  text-black  font-semibold   text-[1rem] py-[0.7rem]  ">-65</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden text-gray-500">Yesterdat, 16:18</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem]  max-md:hidden"><p class=" bg-[#f0f4f8]    w-fit  p-[0.2rem] font-semibold text-beta  rounded-xl">Earned</p></div>
+                    <div class=" w-[10%] max-md:flex-1 text-right text-black  font-semibold   text-[1rem] py-[0.7rem]  ">-65</div>
 
                 </div>
                 <!-- third -->
-                <div class="flex  items-center  pb-[0.5rem] border-b-[1px]  border-b-gray-300">
-                    <div class="flex items-center   gap-[0.5rem]    w-[70%] flex-1 text-[0.6rem] py-[0.7rem]">
+                <div class="flex  items-center  pb-[0.5rem] border-b-[1px]  border-b-gray-300">  
+                    <div class="flex items-center   gap-[0.5rem]    w-[70%] py-[0.7rem]">
                         <div   class="bg-low_alpha p-[0.8rem] rounded-md">
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
   <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
@@ -120,14 +103,14 @@
                             <p  class="text-[0.8rem] text-[#aeb4c5]">Service  sold to lina A. </p>
                         </div>
                     </div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]  text-gray-500">Mar 18, 11:04</div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]   text-gray-500"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
-                    <div class=" w-[10%] flex-1  text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+120</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden text-gray-500">Mar 18, 11:04</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
+                    <div class=" w-[10%] max-md:flex-1 text-right text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+120</div>
 
                 </div>
                 <!-- 4  -->
                 <div class="flex  items-center  pb-[0.5rem] border-b-[1px]  border-b-gray-300">    
-                    <div class="flex items-center   gap-[0.5rem]    w-[70%] flex-1 text-[0.6rem] py-[0.7rem]">
+                    <div class="flex items-center   gap-[0.5rem]    w-[70%] py-[0.7rem]">
                         <div   class="bg-low_alpha p-[0.8rem] rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame preview-icon"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></svg>
                         </div>
@@ -136,14 +119,14 @@
                             <p  class="text-[0.8rem]  text-[#aeb4c5]">Weekly attendance reward</p>
                         </div>
                     </div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]  text-gray-500">Mar 17, 08:30</div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]   text-gray-500"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
-                    <div class=" w-[10%] flex-1  text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+100</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden text-gray-500">Mar 17, 08:30</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
+                    <div class=" w-[10%] max-md:flex-1 text-right text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+100</div>
 
                 </div>
                 <!-- 5 -->
                 <div class="flex  items-center  pb-[0.5rem] border-b-[1px]  border-b-gray-300">
-                    <div class="flex items-center   gap-[0.5rem]    w-[70%] flex-1 text-[0.6rem] py-[0.7rem]">
+                    <div class="flex items-center   gap-[0.5rem]    w-[70%] py-[0.7rem]">
                         <div class="bg-[#f0f4f8] p-[0.8rem] rounded-md">
                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                                 <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
@@ -154,14 +137,14 @@
                             <p  class="text-[0.8rem] text-[#aeb4c5]">Marketplace   purcchase</p>
                         </div>
                     </div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]  text-gray-500">Mar 15, 14:21</div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]   text-gray-500"><p class=" bg-[#f0f4f8]    w-fit  p-[0.2rem] font-semibold text-beta  rounded-xl">Earned</p></div>
-                    <div class=" w-[10%] flex-1  text-black  font-semibold   text-[1rem] py-[0.7rem]  ">-45</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden text-gray-500">Mar 15, 14:21</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem]  max-md:hidden"><p class=" bg-[#f0f4f8]    w-fit  p-[0.2rem] font-semibold text-beta  rounded-xl">Earned</p></div>
+                    <div class=" w-[10%] max-md:flex-1 text-right text-black  font-semibold   text-[1rem] py-[0.7rem]  ">-45</div>
 
                 </div>
                 <!-- 6 -->
                 <div class="flex  items-center  pb-[0.5rem] ">
-                    <div class="flex items-center   gap-[0.5rem]    w-[70%] flex-1 text-[0.6rem] py-[0.7rem]">
+                    <div class="flex items-center   gap-[0.5rem]    w-[70%] py-[0.7rem]">
                         <div   class="bg-low_alpha p-[0.8rem] rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20 " height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
   <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
@@ -172,18 +155,14 @@
                             <p  class="text-[0.8rem]  text-[#aeb4c5]">Community milestone</p>
                         </div>
                     </div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]  text-gray-500">Mar 14, 17:50</div>
-                    <div class=" w-[10%] flex-1    text-[0.9rem] py-[0.7rem]   text-gray-500"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
-                    <div class=" w-[10%] flex-1  text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+30</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem] max-md:hidden text-gray-500">Mar 14, 17:50</div>
+                    <div class=" w-[10%] text-[0.9rem] py-[0.7rem]  max-md:hidden"><p class=" bg-low_alpha  w-fit  p-[0.2rem] font-semibold text-gold  rounded-xl">Earned</p></div>
+                    <div class=" w-[10%] max-md:flex-1 text-right text-gold  font-semibold   text-[1rem] py-[0.7rem]  ">+30</div>
 
                 </div>
 
             </div>
- 
-
-
-
         </section>
     </main>
 </body>
-</html>e
+</html>
