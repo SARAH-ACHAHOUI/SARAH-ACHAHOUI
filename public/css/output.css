@@ -1439,6 +1439,9 @@
   .w-\[76\%\] {
     width: 76%;
   }
+  .w-\[90\%\] {
+    width: 90%;
+  }
   .w-\[100\%\] {
     width: 100%;
   }
@@ -1549,6 +1552,9 @@
   }
   .gap-\[3rem\] {
     gap: 3rem;
+  }
+  .gap-\[4rem\] {
+    gap: 4rem;
   }
   .gap-\[5rem\] {
     gap: 5rem;
@@ -2245,6 +2251,9 @@
     .max-md\:hidden {
       display: none;
     }
+    .max-md\:w-\[70\%\] {
+      width: 70%;
+    }
     .max-md\:w-\[100\%\] {
       width: 100%;
     }
@@ -2290,6 +2299,9 @@
     }
     .max-md\:text-\[1\.1rem\] {
       font-size: 1.1rem;
+    }
+    .max-md\:text-\[2rem\] {
+      font-size: 2rem;
     }
   }
   @media (width >= 40rem) {
