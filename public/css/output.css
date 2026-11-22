@@ -1724,8 +1724,14 @@
   .pb-7 {
     padding-bottom: calc(var(--spacing) * 7);
   }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
   .pb-\[0\.5rem\] {
     padding-bottom: 0.5rem;
+  }
+  .pb-\[3rem\] {
+    padding-bottom: 3rem;
   }
   .pl-\[0\.5rem\] {
     padding-left: 0.5rem;
@@ -2343,6 +2349,9 @@
     }
     .lg\:pt-7 {
       padding-top: calc(var(--spacing) * 7);
+    }
+    .lg\:pb-14 {
+      padding-bottom: calc(var(--spacing) * 14);
     }
     .lg\:text-5xl {
       font-size: var(--text-5xl);
